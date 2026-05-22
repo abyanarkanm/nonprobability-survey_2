@@ -15,7 +15,7 @@ Proyek ini merupakan analisis statistik kuantitatif berbasis survei yang bertuju
 - [Pendahuluan](#pendahuluan)
 - [Metode Penelitian](#metode-penelitian)
 - [Hasil dan Pembahasan](#hasil-dan-pembahasan)
-- [Analisis Perbandingan](#analisis-perbandingan)
+- [Analisis Perbandingan](#analisis-komparatif)
 - [Kesimpulan](#kesimpulan)
 
 ---
