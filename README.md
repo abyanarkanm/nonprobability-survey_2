@@ -1,13 +1,12 @@
-# nonprobability-survey_2
 ### Nama: [Nama Lengkap]
 ### NIM: [Nomor Induk Mahasiswa]
-### Program Studi: [Program Studi]
+### Program Studi: Statistika
 
 ---
 
 # Analisis Survei Penggunaan Spotify & Music Streaming terhadap Produktivitas Belajar Mahasiswa
 
-Proyek ini merupakan analisis statistik kuantitatif berbasis survei yang bertujuan untuk mengukur pengaruh penggunaan platform *music streaming* (Spotify) terhadap produktivitas belajar mahasiswa. Analisis dilakukan menggunakan bahasa pemrograman **R** dengan pendekatan uji validitas, reliabilitas, dan statistik deskriptif. Data dikumpulkan melalui kuesioner daring menggunakan Google Form dengan skala pengukuran Likert.
+Proyek ini merupakan analisis statistik kuantitatif berbasis survei yang bertujuan untuk mengukur persepsi mahasiswa terhadap pengaruh penggunaan platform *music streaming* (Spotify, YouTube Music, dll.) terhadap produktivitas belajar mereka. Analisis dilakukan menggunakan bahasa pemrograman **R** dengan pendekatan uji validitas, reliabilitas, dan statistik deskriptif. Data dikumpulkan melalui kuesioner daring berbasis Google Form yang disebarkan kepada **28 responden mahasiswa Program Studi Statistika**, dengan skala pengukuran Likert 5 poin.
 
 ---
 
@@ -25,11 +24,11 @@ Proyek ini merupakan analisis statistik kuantitatif berbasis survei yang bertuju
 
 ### Latar Belakang
 
-Di era digital saat ini, platform *music streaming* seperti Spotify telah menjadi bagian tak terpisahkan dari kehidupan sehari-hari mahasiswa. Ketersediaan musik yang mudah diakses kapan saja dan di mana saja memunculkan pertanyaan penting: apakah kebiasaan mendengarkan musik saat belajar berdampak positif atau justru kontraproduktif terhadap performa akademik?
+Di era digital saat ini, platform *music streaming* seperti Spotify dan YouTube Music telah menjadi bagian tak terpisahkan dari kehidupan sehari-hari mahasiswa. Ketersediaan musik yang mudah diakses kapan saja dan di mana saja memunculkan pertanyaan penting: apakah kebiasaan mendengarkan musik saat belajar berdampak positif atau justru kontraproduktif terhadap performa akademik?
 
-Secara ideal, mahasiswa diharapkan mampu mengelola waktu belajar secara efektif dengan fokus penuh. Namun, realita di lapangan menunjukkan bahwa banyak mahasiswa yang secara aktif menggunakan platform *music streaming* secara bersamaan dengan aktivitas akademik mereka — baik saat mengerjakan tugas, membaca, maupun belajar mandiri. Kondisi ini menciptakan kesenjangan yang perlu dikaji lebih lanjut secara empiris.
+Secara ideal, mahasiswa diharapkan mampu mengelola waktu belajar secara efektif dengan fokus penuh. Namun, realita di lapangan menunjukkan bahwa banyak mahasiswa secara aktif menggunakan platform *music streaming* secara bersamaan dengan aktivitas akademik mereka — baik saat mengerjakan tugas, membaca, maupun belajar mandiri. Kondisi ini menciptakan kesenjangan yang perlu dikaji lebih lanjut secara empiris.
 
-Penelitian ini hadir untuk mengisi kekosongan data tersebut dengan menganalisis persepsi mahasiswa secara langsung melalui instrumen kuesioner yang terstandarisasi dan telah diuji kualitasnya.
+Penelitian ini hadir untuk mengisi kekosongan data tersebut dengan menganalisis persepsi mahasiswa secara langsung melalui instrumen kuesioner yang terstandarisasi dan telah diuji kualitasnya melalui serangkaian uji psikometri.
 
 ### Rumusan Masalah
 
@@ -39,7 +38,7 @@ Penelitian ini hadir untuk mengisi kekosongan data tersebut dengan menganalisis 
 
 ### Tujuan Penelitian
 
-1. Menguji validitas setiap item instrumen kuesioner menggunakan korelasi item-total skor.
+1. Menguji validitas setiap item instrumen kuesioner menggunakan korelasi item-total skor (Pearson).
 2. Menguji reliabilitas instrumen menggunakan koefisien Cronbach's Alpha.
 3. Mendeskripsikan distribusi frekuensi dan persentase jawaban responden pada setiap item pertanyaan.
 
@@ -55,10 +54,13 @@ Penelitian ini menggunakan **pendekatan kuantitatif** dengan metode **survei des
 
 | Komponen | Keterangan |
 |---|---|
-| **Populasi Target** | Mahasiswa pengguna Spotify / platform *music streaming* |
+| **Populasi Target** | Mahasiswa pengguna platform *music streaming* |
 | **Jumlah Populasi (N)** | 157 orang |
 | **Tingkat Kesalahan (e)** | 10% (0,10) |
 | **Jumlah Sampel Minimum** | 62 responden |
+| **Jumlah Responden Aktual** | 28 responden |
+| **Komposisi Gender** | 21 Perempuan (75%) · 7 Laki-laki (25%) |
+| **Program Studi** | Statistika |
 | **Teknik Sampling** | Slovin Sampling |
 
 ### Formulasi Ukuran Sampel (Rumus Slovin)
@@ -74,6 +76,8 @@ $$n = \frac{N}{1 + N \cdot e^2}$$
 
 $$n = \frac{157}{1 + 157 \times (0{,}10)^2} = \frac{157}{1 + 1{,}57} = \frac{157}{2{,}57} \approx 61{,}09 \rightarrow \lceil 61{,}09 \rceil = \mathbf{62 \text{ responden}}$$
 
+> **Catatan:** Jumlah responden yang berhasil dikumpulkan sebanyak 28 orang, sehingga analisis ini bersifat eksploratori dengan ukuran sampel kecil (*pilot study*). Penambahan sampel hingga ≥62 responden direkomendasikan untuk penelitian lanjutan.
+
 ### Skala Pengukuran Instrumen
 
 Kuesioner menggunakan **Skala Likert 5 Poin** dengan bobot sebagai berikut:
@@ -86,22 +90,36 @@ Kuesioner menggunakan **Skala Likert 5 Poin** dengan bobot sebagai berikut:
 | 2 | Tidak Setuju (TS) |
 | 1 | Sangat Tidak Setuju (STS) |
 
+### Daftar Item Pertanyaan Kuesioner
+
+| No. | Pernyataan |
+|:---:|---|
+| Item 1 | Saya menggunakan platform music streaming (Spotify, YouTube Music, dll.) saat belajar. |
+| Item 2 | Mendengarkan musik membantu saya lebih fokus saat mengerjakan tugas. |
+| Item 3 | Saya merasa lebih semangat belajar ketika ditemani musik. |
+| Item 4 | Musik membantu saya mengurangi rasa bosan saat belajar. |
+| Item 5 | Saya lebih cepat menyelesaikan tugas ketika mendengarkan musik. |
+| Item 6 | Musik yang saya dengarkan tidak mengganggu konsentrasi saya. |
+| Item 7 | Saya merasa produktivitas belajar saya meningkat dengan adanya musik. |
+| Item 8 | Saya lebih nyaman belajar di tempat yang ada musik dibanding yang sunyi. |
+| Item 9 | Saya secara aktif memilih playlist tertentu untuk menemani waktu belajar. |
+| Item 10 | Secara keseluruhan, music streaming memberikan dampak positif terhadap produktivitas belajar saya. |
+
 ### Dokumentasi Script R
 
 #### 1. Load Library
 
 ```r
-library(readxl)   # Membaca file Excel
-library(psych)    # Uji reliabilitas (Cronbach's Alpha)
+library(readxl)    # Membaca file Excel
+library(psych)     # Uji reliabilitas (Cronbach's Alpha)
 library(tidyverse) # Manipulasi dan transformasi data
 ```
 
-#### 2. Import Data
+#### 2. Import & Eksplorasi Data
 
 ```r
-data <- read_excel("path/to/file.xlsx")
+data <- read_excel("path/to/Survei_Spotify.xlsx")
 
-# Melihat struktur data
 View(data)
 str(data)
 ```
@@ -109,7 +127,6 @@ str(data)
 #### 3. Transformasi Tipe Variabel
 
 ```r
-# Mengubah semua variabel menjadi numerik
 data <- data %>%
   mutate(across(everything(), as.numeric))
 ```
@@ -124,14 +141,14 @@ n <- N / (1 + N * e^2)
 ceiling(n) # Hasil: 62 responden
 ```
 
-#### 5. Uji Validitas
+#### 5. Seleksi Item & Uji Validitas
 
 ```r
 item <- data[, 1:10]  # Memilih 10 item pertanyaan
-total_skor <- rowSums(item)  # Menghitung total skor
+total_skor <- rowSums(item)
 
 validitas <- data.frame(
-  Item    = names(item),
+  Item     = names(item),
   r_hitung = sapply(item, function(x) cor(x, total_skor)),
   p_value  = sapply(item, function(x) cor.test(x, total_skor)$p.value)
 )
@@ -159,7 +176,7 @@ for(i in names(item)){
 }
 ```
 
-#### 8. Visualisasi Data
+#### 8. Visualisasi Histogram
 
 ```r
 hist(
@@ -178,100 +195,114 @@ hist(
 
 ### 4.1 Uji Validitas
 
-> ⚠️ *Isi tabel berikut dengan hasil output dari script R Anda.*
+Uji validitas dilakukan dengan menghitung korelasi Pearson antara skor setiap item dengan total skor keseluruhan. Item dinyatakan **valid** apabila nilai $p\text{-value} < 0{,}05$.
 
-| No. | Item | $r_{hitung}$ | $p\text{-value}$ | Status |
+| No. | Pernyataan | $r_{hitung}$ | $p\text{-value}$ | Status |
 |:---:|---|:---:|:---:|:---:|
-| 1 | Item 1 | — | — | Valid / Tidak Valid |
-| 2 | Item 2 | — | — | Valid / Tidak Valid |
-| 3 | Item 3 | — | — | Valid / Tidak Valid |
-| 4 | Item 4 | — | — | Valid / Tidak Valid |
-| 5 | Item 5 | — | — | Valid / Tidak Valid |
-| 6 | Item 6 | — | — | Valid / Tidak Valid |
-| 7 | Item 7 | — | — | Valid / Tidak Valid |
-| 8 | Item 8 | — | — | Valid / Tidak Valid |
-| 9 | Item 9 | — | — | Valid / Tidak Valid |
-| 10 | Item 10 | — | — | Valid / Tidak Valid |
+| 1 | Penggunaan platform *music streaming* saat belajar | 0,8570 | < 0,001 | ✅ Valid |
+| 2 | Musik membantu lebih fokus saat mengerjakan tugas | 0,7283 | < 0,001 | ✅ Valid |
+| 3 | Lebih semangat belajar ketika ditemani musik | 0,8745 | < 0,001 | ✅ Valid |
+| 4 | Musik mengurangi rasa bosan saat belajar | 0,6432 | < 0,001 | ✅ Valid |
+| 5 | Lebih cepat menyelesaikan tugas saat mendengarkan musik | 0,7857 | < 0,001 | ✅ Valid |
+| 6 | Musik tidak mengganggu konsentrasi | 0,2551 | 0,1901 | ❌ Tidak Valid |
+| 7 | Produktivitas belajar meningkat dengan adanya musik | 0,9313 | < 0,001 | ✅ Valid |
+| 8 | Lebih nyaman belajar di tempat ada musik vs sunyi | 0,7915 | < 0,001 | ✅ Valid |
+| 9 | Aktif memilih playlist untuk menemani belajar | 0,7867 | < 0,001 | ✅ Valid |
+| 10 | *Music streaming* berdampak positif secara keseluruhan | 0,8728 | < 0,001 | ✅ Valid |
 
-**Interpretasi:** Berdasarkan hasil uji validitas, item dengan nilai korelasi tertinggi adalah **[Item X]** ($r_{hitung}$ = ...), yang menunjukkan konsistensi pengukuran paling kuat terhadap konstruk total. Sebaliknya, item dengan korelasi terendah adalah **[Item Y]** ($r_{hitung}$ = ...). Seluruh item dinyatakan **valid** apabila nilai $p\text{-value} < 0{,}05$.
+**Interpretasi:** Dari 10 item yang diuji, **9 item dinyatakan valid** dan 1 item tidak valid. Item dengan korelasi tertinggi adalah **Item 7** ($r_{hitung}$ = 0,9313) mengenai peningkatan produktivitas belajar secara umum, yang menunjukkan konsistensi pengukuran paling kuat terhadap konstruk total. Item dengan korelasi terendah adalah **Item 6** ($r_{hitung}$ = 0,2551, $p$ = 0,190) mengenai anggapan musik tidak mengganggu konsentrasi — item ini **tidak valid** karena $p\text{-value} > 0{,}05$, mengindikasikan persepsi responden pada aspek gangguan konsentrasi tidak konsisten dengan arah konstruk secara keseluruhan. Item 6 perlu direvisi atau dipertimbangkan untuk dihapus dari instrumen.
 
 ---
 
 ### 4.2 Uji Reliabilitas
 
-> ⚠️ *Isi tabel berikut dengan hasil output dari script R Anda.*
-
 | Koefisien | Nilai | Jumlah Item | Status |
-|---|:---:|:---:|---|
-| Cronbach's Alpha | — | 10 | Reliabel / Tidak Reliabel |
+|---|:---:|:---:|:---:|
+| Cronbach's Alpha | **0,9202** | 10 | ✅ Sangat Reliabel |
 
-**Interpretasi:** Instrumen dinyatakan **reliabel** apabila nilai Cronbach's Alpha ≥ 0,70. Nilai yang diperoleh sebesar **[...]** menunjukkan bahwa instrumen memiliki konsistensi internal yang [baik/cukup/kurang] dan layak digunakan untuk pengukuran lebih lanjut.
+**Interpretasi:** Nilai Cronbach's Alpha sebesar **0,9202** melampaui ambang batas minimum reliabilitas yang disyaratkan (α ≥ 0,70). Menurut kategori George & Mallery (2003), nilai ini masuk dalam kategori **"Excellent"** (α > 0,90), yang berarti instrumen memiliki tingkat konsistensi internal yang sangat tinggi. Dengan demikian, instrumen kuesioner ini **layak dan andal** digunakan untuk mengukur persepsi mahasiswa terhadap pengaruh *music streaming* pada produktivitas belajar.
 
 ---
 
 ### 4.3 Analisis Deskriptif
 
-> ⚠️ *Isi tabel berikut dengan hasil output loop frekuensi & persentase dari script R Anda.*
-
 #### Tabel Frekuensi
 
-| Item | STS (1) | TS (2) | N (3) | S (4) | SS (5) | Total |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Item 1 | — | — | — | — | — | — |
-| Item 2 | — | — | — | — | — | — |
-| Item 3 | — | — | — | — | — | — |
-| Item 4 | — | — | — | — | — | — |
-| Item 5 | — | — | — | — | — | — |
-| Item 6 | — | — | — | — | — | — |
-| Item 7 | — | — | — | — | — | — |
-| Item 8 | — | — | — | — | — | — |
-| Item 9 | — | — | — | — | — | — |
-| Item 10 | — | — | — | — | — | — |
+| No. | Pernyataan | STS (1) | TS (2) | N (3) | S (4) | SS (5) | Total |
+|:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | Penggunaan *music streaming* saat belajar | 2 | 0 | 5 | 11 | 10 | 28 |
+| 2 | Musik membantu lebih fokus saat tugas | 1 | 2 | 11 | 8 | 6 | 28 |
+| 3 | Lebih semangat belajar dengan musik | 2 | 0 | 4 | 10 | 12 | 28 |
+| 4 | Musik mengurangi rasa bosan | 1 | 0 | 2 | 11 | 14 | 28 |
+| 5 | Lebih cepat selesaikan tugas dengan musik | 1 | 1 | 14 | 6 | 6 | 28 |
+| 6 | Musik tidak mengganggu konsentrasi | 0 | 1 | 12 | 8 | 7 | 28 |
+| 7 | Produktivitas meningkat dengan musik | 2 | 2 | 8 | 9 | 7 | 28 |
+| 8 | Lebih nyaman belajar dengan musik vs sunyi | 2 | 2 | 11 | 7 | 6 | 28 |
+| 9 | Aktif memilih playlist untuk belajar | 1 | 1 | 6 | 11 | 9 | 28 |
+| 10 | Dampak positif *music streaming* secara keseluruhan | 2 | 0 | 8 | 10 | 8 | 28 |
 
 #### Tabel Persentase (%)
 
-| Item | STS (1) | TS (2) | N (3) | S (4) | SS (5) | Total |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Item 1 | —% | —% | —% | —% | —% | 100% |
-| Item 2 | —% | —% | —% | —% | —% | 100% |
-| Item 3 | —% | —% | —% | —% | —% | 100% |
-| Item 4 | —% | —% | —% | —% | —% | 100% |
-| Item 5 | —% | —% | —% | —% | —% | 100% |
-| Item 6 | —% | —% | —% | —% | —% | 100% |
-| Item 7 | —% | —% | —% | —% | —% | 100% |
-| Item 8 | —% | —% | —% | —% | —% | 100% |
-| Item 9 | —% | —% | —% | —% | —% | 100% |
-| Item 10 | —% | —% | —% | —% | —% | 100% |
+| No. | Pernyataan | STS (1) | TS (2) | N (3) | S (4) | SS (5) | Total |
+|:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | Penggunaan *music streaming* saat belajar | 7,14% | 0,00% | 17,86% | 39,29% | 35,71% | 100% |
+| 2 | Musik membantu lebih fokus saat tugas | 3,57% | 7,14% | 39,29% | 28,57% | 21,43% | 100% |
+| 3 | Lebih semangat belajar dengan musik | 7,14% | 0,00% | 14,29% | 35,71% | 42,86% | 100% |
+| 4 | Musik mengurangi rasa bosan | 3,57% | 0,00% | 7,14% | 39,29% | 50,00% | 100% |
+| 5 | Lebih cepat selesaikan tugas dengan musik | 3,57% | 3,57% | 50,00% | 21,43% | 21,43% | 100% |
+| 6 | Musik tidak mengganggu konsentrasi | 0,00% | 3,57% | 42,86% | 28,57% | 25,00% | 100% |
+| 7 | Produktivitas meningkat dengan musik | 7,14% | 7,14% | 28,57% | 32,14% | 25,00% | 100% |
+| 8 | Lebih nyaman belajar dengan musik vs sunyi | 7,14% | 7,14% | 39,29% | 25,00% | 21,43% | 100% |
+| 9 | Aktif memilih playlist untuk belajar | 3,57% | 3,57% | 21,43% | 39,29% | 32,14% | 100% |
+| 10 | Dampak positif *music streaming* secara keseluruhan | 7,14% | 0,00% | 28,57% | 35,71% | 28,57% | 100% |
 
-**Interpretasi:** Secara umum, distribusi jawaban responden menunjukkan kecenderungan ke arah **[Setuju/Netral/...]**, yang mengindikasikan bahwa sebagian besar mahasiswa [tuliskan tren utama berdasarkan data]. Item yang mendapat respons paling dominan positif adalah **[Item X]**, sementara item dengan variasi jawaban terluas adalah **[Item Y]**, yang mengisyaratkan perbedaan persepsi yang signifikan di kalangan responden.
+#### Statistik Deskriptif per Item
+
+| No. | Pernyataan | Mean | Std. Dev. |
+|:---:|---|:---:|:---:|
+| 1 | Penggunaan *music streaming* saat belajar | 3,96 | 1,10 |
+| 2 | Musik membantu lebih fokus saat tugas | 3,57 | 1,03 |
+| 3 | Lebih semangat belajar dengan musik | 4,07 | 1,12 |
+| **4** | **Musik mengurangi rasa bosan** | **4,32** | **0,90** |
+| 5 | Lebih cepat selesaikan tugas dengan musik | 3,54 | 1,00 |
+| 6 | Musik tidak mengganggu konsentrasi | 3,75 | 0,89 |
+| 7 | Produktivitas meningkat dengan musik | 3,61 | 1,17 |
+| 8 | Lebih nyaman belajar dengan musik vs sunyi | 3,46 | 1,14 |
+| 9 | Aktif memilih playlist untuk belajar | 3,93 | 1,02 |
+| 10 | Dampak positif *music streaming* secara keseluruhan | 3,79 | 1,10 |
+| — | **Total Skor** | **38,00** | **8,02** |
+
+**Interpretasi:** Secara umum, distribusi jawaban responden menunjukkan kecenderungan ke arah **Setuju (S)** hingga **Sangat Setuju (SS)** pada sebagian besar item. Item dengan rata-rata tertinggi adalah **Item 4** (*Mean* = 4,32) mengenai peran musik dalam mengurangi rasa bosan, di mana 50% responden menjawab Sangat Setuju — mengindikasikan konsensus yang kuat bahwa *music streaming* efektif sebagai pengelola emosi belajar. Sebaliknya, **Item 8** (*Mean* = 3,46) mengenai preferensi belajar di tempat bermusik vs sunyi memiliki rata-rata terendah dengan sebaran jawaban yang paling variatif, mencerminkan adanya perbedaan preferensi lingkungan belajar yang signifikan di kalangan responden. Item 5 (*Mean* = 3,54) tentang kecepatan penyelesaian tugas juga menunjukkan distribusi yang paling merata (50% Netral), menandakan keyakinan responden terhadap dampak musik pada efisiensi kerja masih terbagi.
 
 ---
 
 ## Analisis Komparatif
 
-Bagian ini membandingkan hasil analisis antara kondisi **Sampel Kecil** (menggunakan tingkat kesalahan *e* = 10%, n ≈ 62) dan **Sampel Besar** (misalnya *e* = 5%, n ≈ 113) untuk membuktikan efek penambahan responden terhadap kualitas dan stabilitas instrumen.
+Bagian ini membandingkan kondisi **Sampel Kecil** (data aktual, n = 28, e ≈ 17%) dengan simulasi **Sampel Besar** sesuai standar Slovin (n ≥ 62, e = 10%) untuk mengilustrasikan efek penambahan sampel terhadap kualitas dan stabilitas instrumen.
 
 ### 5.1 Komparasi Ukuran Sampel (Rumus Slovin)
 
-| Parameter | Sampel Kecil | Sampel Besar |
+| Parameter | Sampel Kecil (Aktual) | Sampel Besar (Target Slovin) |
 |---|:---:|:---:|
-| Tingkat Kesalahan (e) | 10% | 5% |
-| Ukuran Sampel (n) | ≈ 62 | ≈ 113 |
-| Tingkat Ketelitian | 90% | 95% |
+| Jumlah Responden (n) | 28 | ≥ 62 |
+| Tingkat Kesalahan (e) | ≈ 17% | 10% |
+| Tingkat Ketelitian | ≈ 83% | 90% |
+| Representativitas | Rendah–Sedang | Memadai |
 
 ### 5.2 Komparasi Kualitas Instrumen
 
-> ⚠️ *Isi dengan nilai aktual dari dua kondisi sampel.*
-
-| Metrik | Sampel Kecil (n≈62) | Sampel Besar (n≈113) | Perubahan |
-|---|:---:|:---:|:---:|
-| $r_{hitung}$ rata-rata | — | — | ↑ / ↓ / → |
-| Cronbach's Alpha | — | — | ↑ / ↓ / → |
-| Jumlah Item Valid | — / 10 | — / 10 | ↑ / ↓ / → |
+| Metrik | Sampel Kecil (n=28) | Sampel Besar (n≥62) | Proyeksi |
+|---|:---:|:---:|---|
+| Item Valid | 9 / 10 | Estimasi 9–10 / 10 | Stabilitas meningkat |
+| $r_{hitung}$ rata-rata (9 item valid) | 0,7896 | Cenderung lebih stabil | Fluktuasi mengecil |
+| Cronbach's Alpha | 0,9202 | Proyeksi ≥ 0,90 | Reliabilitas terjaga |
+| Item 6 ($r_{hitung}$) | 0,2551 (✗) | Berpotensi meningkat | Perlu revisi redaksi |
 
 ### 5.3 Komparasi Distribusi Jawaban
 
-Pada kondisi sampel kecil, distribusi jawaban responden cenderung [lebih/kurang] bervariasi karena keterbatasan jumlah observasi yang merepresentasikan populasi. Penambahan ukuran sampel menjadi sampel besar diharapkan menghasilkan distribusi yang lebih [stabil/representatif], di mana simpangan baku antar item cenderung [mengecil/membesar], dan proporsi jawaban pada kategori ekstrem (STS & SS) menjadi lebih [proporsional/terwakili].
+Pada kondisi sampel kecil (n = 28), distribusi jawaban tampak cukup bervariasi, terutama pada item-item yang berkaitan dengan efisiensi belajar (Item 5) dan preferensi lingkungan (Item 8), di mana proporsi jawaban Netral sangat dominan (masing-masing 50% dan 39%). Hal ini wajar mengingat keterbatasan jumlah observasi yang belum sepenuhnya merepresentasikan keberagaman populasi.
+
+Pada simulasi sampel besar (n ≥ 62), distribusi jawaban diproyeksikan akan menjadi lebih stabil dan proporsional. Proporsi jawaban pada kategori ekstrem (STS & SS) cenderung akan lebih terdistribusi merata, simpangan baku antar item akan mengecil, dan nilai korelasi item-total — khususnya Item 6 — berpotensi mengalami penyesuaian ke arah yang lebih representatif terhadap konstruk populasi yang sebenarnya.
 
 ---
 
@@ -279,19 +310,19 @@ Pada kondisi sampel kecil, distribusi jawaban responden cenderung [lebih/kurang]
 
 ### Rangkuman Temuan
 
-1. **Validitas:** Instrumen kuesioner yang terdiri dari 10 item pertanyaan menunjukkan hasil [seluruhnya/sebagian besar] valid, yang ditunjukkan oleh nilai $r_{hitung}$ yang signifikan ($p < 0{,}05$) pada masing-masing item.
-2. **Reliabilitas:** Instrumen terbukti reliabel dengan nilai Cronbach's Alpha sebesar **[...]**, melampaui ambang batas minimum 0,70 yang disyaratkan untuk kelayakan instrumen penelitian.
-3. **Deskriptif:** Distribusi jawaban responden secara umum condong ke arah [Setuju/Positif/...], mengindikasikan bahwa mahasiswa [simpulkan tren utama dari data].
+1. **Validitas:** 9 dari 10 item instrumen kuesioner dinyatakan **valid** secara statistik ($p < 0{,}05$). Satu item tidak valid adalah Item 6 (*"Musik yang saya dengarkan tidak mengganggu konsentrasi saya"*) dengan $r_{hitung}$ = 0,2551 dan $p$ = 0,190, yang mengindikasikan inkonsistensi persepsi responden pada aspek gangguan konsentrasi.
+2. **Reliabilitas:** Instrumen terbukti sangat reliabel dengan nilai Cronbach's Alpha = **0,9202** (kategori *Excellent*), jauh melampaui ambang batas minimum 0,70. Instrumen dinilai konsisten dan andal secara internal.
+3. **Deskriptif:** Distribusi jawaban responden secara umum condong ke arah **Setuju–Sangat Setuju**, dengan item tertinggi pada *"Musik membantu mengurangi rasa bosan saat belajar"* (Mean = 4,32) dan terendah pada *"Lebih nyaman belajar di tempat bermusik"* (Mean = 3,46). Total skor rata-rata responden adalah **38,00** dari maksimum 50.
 
 ### Evaluasi Metodologis
 
-Secara keseluruhan, instrumen kuesioner yang digunakan dalam penelitian ini telah memenuhi standar kualitas psikometri yang disyaratkan, baik dari sisi validitas konstruk maupun konsistensi internal. Instrumen ini dinilai **layak** untuk digunakan dalam pengambilan data pada penelitian lanjutan dengan populasi dan konteks yang serupa.
+Secara keseluruhan, instrumen kuesioner yang digunakan dalam penelitian ini telah memenuhi standar kualitas psikometri yang disyaratkan, baik dari sisi validitas konstruk (9/10 item valid) maupun konsistensi internal yang sangat tinggi (α = 0,92). Instrumen ini **layak** digunakan sebagai alat ukur dalam penelitian lanjutan dengan skala populasi yang lebih besar. Namun demikian, penelitian ini masih bersifat eksploratori karena jumlah responden aktual (n = 28) belum memenuhi batas minimum Slovin (n = 62).
 
 ### Rekomendasi
 
-1. **Evaluasi Item Berperforma Rendah:** Item dengan nilai $r_{hitung}$ paling rendah perlu dikaji ulang dari sisi redaksi dan kejelasan pertanyaan agar lebih mudah dipahami oleh responden.
-2. **Perluasan Sampel:** Guna meningkatkan representativitas dan stabilitas instrumen, disarankan untuk menggunakan tingkat kesalahan yang lebih ketat (misalnya *e* = 5%) pada penelitian berikutnya.
-3. **Tindak Lanjut Data Deskriptif:** Temuan distribusi jawaban yang cenderung [positif/netral] perlu ditindaklanjuti dengan studi kualitatif untuk menggali lebih dalam faktor-faktor yang memengaruhi persepsi mahasiswa terhadap penggunaan *music streaming* dalam konteks akademik.
+1. **Revisi Item 6:** Pernyataan *"Musik yang saya dengarkan tidak mengganggu konsentrasi saya"* perlu dikaji ulang dari sisi redaksi. Formulasi negatif (*"tidak mengganggu"*) berpotensi menimbulkan ambiguitas interpretasi. Disarankan diubah menjadi pernyataan positif seperti *"Saya tetap dapat berkonsentrasi penuh meskipun mendengarkan musik saat belajar."*
+2. **Penambahan Sampel:** Pengumpulan data perlu dilanjutkan hingga memenuhi minimal **62 responden** (standar Slovin e=10%) untuk meningkatkan representativitas dan mengurangi margin of error dari ≈17% menjadi ≤10%.
+3. **Tindak Lanjut Temuan Deskriptif:** Mengingat Item 4 mendapat respons paling positif (50% Sangat Setuju), perlu digali lebih dalam — melalui studi kualitatif atau analisis lanjutan — bagaimana peran *music streaming* sebagai pengatur suasana (*mood regulator*) dapat dioptimalkan dalam konteks akademik, sekaligus mengatasi kekhawatiran sebagian responden terhadap potensi gangguan konsentrasi.
 
 ---
 
@@ -313,11 +344,21 @@ Secara keseluruhan, instrumen kuesioner yang digunakan dalam penelitian ini tela
 ```
 📦 repository-name/
 ├── 📄 README.md
-├── 📄 analisis_tugas2.R        # Script analisis utama
+├── 📄 analisis_tugas2.R                  # Script analisis utama
 └── 📊 data/
-    └── responses.xlsx          # Data mentah hasil survei (opsional)
+    └── Survei_Spotify_Responses.xlsx     # Data mentah hasil survei
 ```
 
 ---
 
-> 📌 **Catatan:** Tabel yang bertanda ⚠️ perlu diisi secara manual dengan hasil output aktual dari eksekusi script R di lingkungan lokal Anda.
+## 📊 Ringkasan Statistik Kunci
+
+| Metrik | Nilai |
+|---|:---:|
+| Jumlah Responden | 28 |
+| Jumlah Item Valid | 9 / 10 |
+| Cronbach's Alpha | 0,9202 ✅ |
+| Mean Total Skor | 38,00 / 50 |
+| Item Skor Tertinggi | Item 4 — Mean 4,32 |
+| Item Skor Terendah | Item 8 — Mean 3,46 |
+| Item Tidak Valid | Item 6 ($r$ = 0,255, $p$ = 0,190) |
