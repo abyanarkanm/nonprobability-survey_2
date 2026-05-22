@@ -326,39 +326,5 @@ Secara keseluruhan, instrumen kuesioner yang digunakan dalam penelitian ini tela
 
 ---
 
-## Teknologi yang Digunakan
-
-| Tools | Fungsi |
-|---|---|
-| **R** | Bahasa pemrograman analisis statistik |
-| `readxl` | Import data dari file Excel (.xlsx) |
-| `psych` | Uji reliabilitas (Cronbach's Alpha) |
-| `tidyverse` | Transformasi dan manipulasi data |
-| **Google Form** | Platform pengumpulan data survei |
-| **Microsoft Excel** | Format penyimpanan data mentah |
-
----
-
-## 📁 Struktur Repository
-
-```
-📦 repository-name/
-├── 📄 README.md
-├── 📄 analisis_tugas2.R                  # Script analisis utama
-└── 📊 data/
-    └── Survei_Spotify_Responses.xlsx     # Data mentah hasil survei
-```
-
----
-
-## 📊 Ringkasan Statistik Kunci
-
-| Metrik | Nilai |
-|---|:---:|
-| Jumlah Responden | 28 |
-| Jumlah Item Valid | 9 / 10 |
-| Cronbach's Alpha | 0,9202 ✅ |
-| Mean Total Skor | 38,00 / 50 |
-| Item Skor Tertinggi | Item 4 — Mean 4,32 |
-| Item Skor Terendah | Item 8 — Mean 3,46 |
-| Item Tidak Valid | Item 6 ($r$ = 0,255, $p$ = 0,190) |
+### Link Kuisioner
+https://forms.gle/6pZKbfLmUCZvdz4SA
