@@ -118,7 +118,7 @@ library(tidyverse) # Manipulasi dan transformasi data
 #### 2. Import & Eksplorasi Data
 
 ```r
-data <- read_excel("path/to/Survei_Spotify.xlsx")
+data <- read_excel("C:/Users/MyBook14E/OneDrive - UGM 365/Documents/ABYAN/Kuliah/Survei Penggunaan Spotify_Music Streaming terhadap Produktivitas Belajar Mahasiswa   (Responses) - Form Responses 1 - Copy.xlsx")
 
 View(data)
 str(data)
@@ -184,7 +184,7 @@ hist(
   main   = "Distribusi Total Skor Responden",
   xlab   = "Total Skor",
   ylab   = "Frekuensi Responden",
-  col    = "lightblue",
+  col    = "green",
   border = "black"
 )
 ```
