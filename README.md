@@ -1,5 +1,5 @@
-### Nama: [Nama Lengkap]
-### NIM: [Nomor Induk Mahasiswa]
+### Nama: Abyan Arkan Maulana
+### NIM: G1F02410013
 ### Program Studi: Statistika
 
 ---
@@ -10,7 +10,7 @@ Proyek ini merupakan analisis statistik kuantitatif berbasis survei yang bertuju
 
 ---
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 - [Pendahuluan](#pendahuluan)
 - [Metode Penelitian](#metode-penelitian)
@@ -326,7 +326,7 @@ Secara keseluruhan, instrumen kuesioner yang digunakan dalam penelitian ini tela
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 | Tools | Fungsi |
 |---|---|
