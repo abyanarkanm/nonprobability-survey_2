@@ -310,19 +310,7 @@ Pada simulasi sampel besar (n ≥ 62), distribusi jawaban diproyeksikan akan men
 
 ### Rangkuman Temuan
 
-1. **Validitas:** 9 dari 10 item instrumen kuesioner dinyatakan **valid** secara statistik ($p < 0{,}05$). Satu item tidak valid adalah Item 6 (*"Musik yang saya dengarkan tidak mengganggu konsentrasi saya"*) dengan $r_{hitung}$ = 0,2551 dan $p$ = 0,190, yang mengindikasikan inkonsistensi persepsi responden pada aspek gangguan konsentrasi.
-2. **Reliabilitas:** Instrumen terbukti sangat reliabel dengan nilai Cronbach's Alpha = **0,9202** (kategori *Excellent*), jauh melampaui ambang batas minimum 0,70. Instrumen dinilai konsisten dan andal secara internal.
-3. **Deskriptif:** Distribusi jawaban responden secara umum condong ke arah **Setuju–Sangat Setuju**, dengan item tertinggi pada *"Musik membantu mengurangi rasa bosan saat belajar"* (Mean = 4,32) dan terendah pada *"Lebih nyaman belajar di tempat bermusik"* (Mean = 3,46). Total skor rata-rata responden adalah **38,00** dari maksimum 50.
-
-### Evaluasi Metodologis
-
-Secara keseluruhan, instrumen kuesioner yang digunakan dalam penelitian ini telah memenuhi standar kualitas psikometri yang disyaratkan, baik dari sisi validitas konstruk (9/10 item valid) maupun konsistensi internal yang sangat tinggi (α = 0,92). Instrumen ini **layak** digunakan sebagai alat ukur dalam penelitian lanjutan dengan skala populasi yang lebih besar. Namun demikian, penelitian ini masih bersifat eksploratori karena jumlah responden aktual (n = 28) belum memenuhi batas minimum Slovin (n = 62).
-
-### Rekomendasi
-
-1. **Revisi Item 6:** Pernyataan *"Musik yang saya dengarkan tidak mengganggu konsentrasi saya"* perlu dikaji ulang dari sisi redaksi. Formulasi negatif (*"tidak mengganggu"*) berpotensi menimbulkan ambiguitas interpretasi. Disarankan diubah menjadi pernyataan positif seperti *"Saya tetap dapat berkonsentrasi penuh meskipun mendengarkan musik saat belajar."*
-2. **Penambahan Sampel:** Pengumpulan data perlu dilanjutkan hingga memenuhi minimal **62 responden** (standar Slovin e=10%) untuk meningkatkan representativitas dan mengurangi margin of error dari ≈17% menjadi ≤10%.
-3. **Tindak Lanjut Temuan Deskriptif:** Mengingat Item 4 mendapat respons paling positif (50% Sangat Setuju), perlu digali lebih dalam — melalui studi kualitatif atau analisis lanjutan — bagaimana peran *music streaming* sebagai pengatur suasana (*mood regulator*) dapat dioptimalkan dalam konteks akademik, sekaligus mengatasi kekhawatiran sebagian responden terhadap potensi gangguan konsentrasi.
+Berdasarkan hasil analisis, instrumen kuesioner ini secara keseluruhan telah memenuhi standar kualitas psikometri yang disyaratkan karena memiliki konsistensi internal yang sangat tinggi dengan nilai Cronbach's Alpha sebesar 0,9202 (kategori Excellent) dan mayoritas itemnya dinyatakan valid (9 dari 10 item dengan $p < 0,05$), di mana respons responden secara umum condong ke arah positif (Setuju–Sangat Setuju) dengan total skor rata-rata 38,00 dari maksimum 50 terutama pada poin fungsi musik sebagai pengurang rasa bosan belajar. Kendati instrumen ini dinilai konsisten dan layak digunakan untuk skala yang lebih besar, penelitian ini masih bersifat eksploratori karena jumlah sampel aktual ($n = 28$) belum memenuhi batas minimum rumus Slovin ($n = 62$), sehingga pengumpulan data wajib dilanjutkan demi meningkatkan representativitas dan menekan margin of error. Selain itu, sebagai langkah tindak lanjut, diperlukan revisi redaksional pada Item 6 yang tidak valid karena formulasi kalimat negatifnya memicu ambiguitas bagi responden, serta disarankan adanya kajian kualitatif mendalam untuk mengeksplorasi peran musik sebagai pengatur suasana belajar (mood regulator) guna mengatasi kekhawatiran terkait potensi gangguan konsentrasi.
 
 ---
 
