@@ -308,11 +308,9 @@ Pada simulasi sampel besar (n ≥ 62), distribusi jawaban diproyeksikan akan men
 
 ## Kesimpulan
 
-### Rangkuman Temuan
-
 Berdasarkan hasil analisis, instrumen kuesioner ini secara keseluruhan telah memenuhi standar kualitas psikometri yang disyaratkan karena memiliki konsistensi internal yang sangat tinggi dengan nilai Cronbach's Alpha sebesar 0,9202 (kategori Excellent) dan mayoritas itemnya dinyatakan valid (9 dari 10 item dengan $p < 0,05$), di mana respons responden secara umum condong ke arah positif (Setuju–Sangat Setuju) dengan total skor rata-rata 38,00 dari maksimum 50 terutama pada poin fungsi musik sebagai pengurang rasa bosan belajar. Kendati instrumen ini dinilai konsisten dan layak digunakan untuk skala yang lebih besar, penelitian ini masih bersifat eksploratori karena jumlah sampel aktual ($n = 28$) belum memenuhi batas minimum rumus Slovin ($n = 62$), sehingga pengumpulan data wajib dilanjutkan demi meningkatkan representativitas dan menekan margin of error. Selain itu, sebagai langkah tindak lanjut, diperlukan revisi redaksional pada Item 6 yang tidak valid karena formulasi kalimat negatifnya memicu ambiguitas bagi responden, serta disarankan adanya kajian kualitatif mendalam untuk mengeksplorasi peran musik sebagai pengatur suasana belajar (mood regulator) guna mengatasi kekhawatiran terkait potensi gangguan konsentrasi.
 
 ---
 
-### Link Kuisioner
+# Link Kuisioner
 https://forms.gle/6pZKbfLmUCZvdz4SA
