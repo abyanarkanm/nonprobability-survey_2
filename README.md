@@ -15,7 +15,7 @@ Proyek ini merupakan analisis statistik kuantitatif berbasis survei yang bertuju
 - [Pendahuluan](#pendahuluan)
 - [Metode Penelitian](#metode-penelitian)
 - [Hasil dan Pembahasan](#hasil-dan-pembahasan)
-- [Analisis Komparatif](#analisis-komparatif)
+- [Analisis Perbandingan](#analisis-perbandingan)
 - [Kesimpulan](#kesimpulan)
 
 ---
@@ -276,11 +276,11 @@ Uji validitas dilakukan dengan menghitung korelasi Pearson antara skor setiap it
 
 ---
 
-## Analisis Komparatif
+## Analisis Perbadingan
 
 Bagian ini membandingkan kondisi **Sampel Kecil** (data aktual, n = 28, e ≈ 17%) dengan simulasi **Sampel Besar** sesuai standar Slovin (n ≥ 62, e = 10%) untuk mengilustrasikan efek penambahan sampel terhadap kualitas dan stabilitas instrumen.
 
-### 5.1 Komparasi Ukuran Sampel (Rumus Slovin)
+### 5.1 Perbandingan Ukuran Sampel (Rumus Slovin)
 
 | Parameter | Sampel Kecil (Aktual) | Sampel Besar (Target Slovin) |
 |---|:---:|:---:|
@@ -289,7 +289,7 @@ Bagian ini membandingkan kondisi **Sampel Kecil** (data aktual, n = 28, e ≈ 17
 | Tingkat Ketelitian | ≈ 83% | 90% |
 | Representativitas | Rendah–Sedang | Memadai |
 
-### 5.2 Komparasi Kualitas Instrumen
+### 5.2 Perbandingan Kualitas Instrumen
 
 | Metrik | Sampel Kecil (n=28) | Sampel Besar (n≥62) | Proyeksi |
 |---|:---:|:---:|---|
@@ -298,7 +298,7 @@ Bagian ini membandingkan kondisi **Sampel Kecil** (data aktual, n = 28, e ≈ 17
 | Cronbach's Alpha | 0,9202 | Proyeksi ≥ 0,90 | Reliabilitas terjaga |
 | Item 6 ($r_{hitung}$) | 0,2551 (✗) | Berpotensi meningkat | Perlu revisi redaksi |
 
-### 5.3 Komparasi Distribusi Jawaban
+### 5.3 Perbandingan Distribusi Jawaban
 
 Pada kondisi sampel kecil (n = 28), distribusi jawaban tampak cukup bervariasi, terutama pada item-item yang berkaitan dengan efisiensi belajar (Item 5) dan preferensi lingkungan (Item 8), di mana proporsi jawaban Netral sangat dominan (masing-masing 50% dan 39%). Hal ini wajar mengingat keterbatasan jumlah observasi yang belum sepenuhnya merepresentasikan keberagaman populasi.
 
